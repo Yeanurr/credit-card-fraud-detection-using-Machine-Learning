@@ -1,11 +1,6 @@
 # 💳 Credit Card Fraud Detection with Machine Learning
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> This project was created for the **CSE445 Machine Learning** course at **North South University**.  
-> The goal is to detect **fraudulent credit card transactions** using different machine learning models.
-
----
 
 ## 📌 What This Project Does
 
@@ -82,10 +77,4 @@ We measured how well the models performed using:
 **Department**: Electrical and Computer Engineering  
 **University**: North South University  
 
----
 
-## 📜 License
-
-This project is under the **MIT License**.  
-You are free to use, share, or modify it.  
-See the [LICENSE](LICENSE) file for more info.
