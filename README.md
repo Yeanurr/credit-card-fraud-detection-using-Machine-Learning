@@ -1,73 +1,74 @@
-
-# 💳 Credit Card Fraud Detection Using Machine Learning
+# 💳 Credit Card Fraud Detection with Machine Learning
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> **🔓 Open Source | MIT License**  
-> This project was developed as part of the **CSE445 Machine Learning** course at **North South University**. The aim is to detect fraudulent credit card transactions using various machine learning models and evaluate their effectiveness on real-world financial data.
+> This project was created for the **CSE445 Machine Learning** course at **North South University**.  
+> The goal is to detect **fraudulent credit card transactions** using different machine learning models.
 
 ---
 
-## 📌 Project Overview
+## 📌 What This Project Does
 
-The goal of this project is to build a robust **Fraud Detection System** using **supervised machine learning techniques**, capable of identifying fraudulent transactions from highly imbalanced datasets. The key steps include:
+This project helps detect fraud in credit card transactions using machine learning.  
+We use real transaction data and train models that can predict whether a transaction is **safe** or **fraud**.
 
-- Preprocessing and analyzing transactional data  
-- Addressing class imbalance using **SMOTE (Synthetic Minority Oversampling Technique)**  
-- Training and comparing multiple ML models  
-- Evaluating each model’s performance on standard classification metrics  
-- Visualizing fraud detection results and model effectiveness  
-
----
-
-## 🔍 Key Features
-
-- **Imbalanced Data Handling**: Applies SMOTE to synthesize minority class samples and balance the dataset.  
-- **Model Comparisons**: Includes models such as Logistic Regression, Decision Trees, Random Forest, XGBoost, and SVM.  
-- **Performance Metrics**: Calculates Accuracy, Precision, Recall, F1-Score, ROC-AUC for fair model comparison.  
-- **Reusability**: The data preparation and model pipeline can be adapted to other anomaly detection domains (e.g., insurance fraud, network intrusion).  
+### 🔧 Steps We Followed:
+- Cleaned and prepared the data  
+- Handled **imbalanced data** using SMOTE (because fraud cases are very few)  
+- Trained multiple models like:
+  - Logistic Regression  
+  - Decision Tree  
+  - Random Forest  
+  - XGBoost  
+  - SVM  
+- Compared their performance using common metrics  
+- Visualized the results for better understanding
 
 ---
 
-## 🧠 Technologies Used
+## 🔍 Main Features
 
-### Machine Learning & Data Processing
-- `Scikit-learn` – ML algorithms & metrics  
-- `Imbalanced-learn` – SMOTE technique  
-- `Pandas` & `NumPy` – Data manipulation  
-- `Matplotlib` & `Seaborn` – Data visualization  
-
-### Development Tools
-- Python 3.8+  
-- Jupyter Notebook  
-- Git & GitHub  
+- Handles imbalanced data using SMOTE  
+- Tests several popular ML models  
+- Measures Accuracy, Precision, Recall, F1 Score, and ROC-AUC  
+- Can be reused for other fraud or anomaly detection problems  
 
 ---
 
-## 📁 Dataset
+## 🧠 Tools & Libraries Used
+
+- **Python 3.8+**
+- **Jupyter Notebook**
+- `Pandas` and `NumPy` – for working with data  
+- `Scikit-learn` – for ML models  
+- `Imbalanced-learn` – for SMOTE  
+- `Matplotlib` and `Seaborn` – for graphs  
+
+---
+
+## 📁 About the Dataset
 
 - **Source**: [Kaggle - Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)  
-- **Description**: Real credit card transactions by European cardholders.  
-- **Size**: 284,807 transactions  
-- **Fraud Cases**: 492 transactions (~0.17%) labeled as fraud  
+- **Total transactions**: 284,807  
+- **Fraud cases**: Only 492 (~0.17%)  
+- **Note**: Most columns are anonymous due to privacy (named V1 to V28)
 
 ---
 
-## 📈 Performance Evaluation
+## 📊 Model Evaluation
 
-The models are evaluated on the following metrics:
-
+We measured how well the models performed using:
 - Accuracy  
 - Precision  
 - Recall  
-- F1-Score  
-- ROC Curve / AUC  
+- F1 Score  
+- ROC-AUC  
 
-> 🏆 **Best performance** was achieved using **Random Forest** and **XGBoost** classifiers, enhanced by the **SMOTE** technique.
+✅ **Random Forest** and **XGBoost** gave the best results after applying SMOTE.
 
 ---
 
-## 👥 Team Members
+## 👨‍💻 Team Members
 
 | Student ID     | Name                          |
 |----------------|-------------------------------|
@@ -77,13 +78,14 @@ The models are evaluated on the following metrics:
 | 2212426642     | Mohammed Nafees Imtiaz        |
 
 **Course**: CSE445 – Machine Learning  
-**Faculty Supervisor**: Mohammad Shifat-E-Rabbi  
-**Department**: Department of Electrical and Computer Engineering  
+**Supervisor**: Mohammad Shifat-E-Rabbi  
+**Department**: Electrical and Computer Engineering  
 **University**: North South University  
 
 ---
 
 ## 📜 License
 
-This project is licensed under the **MIT License**.  
-See the [LICENSE](LICENSE) file for more information
+This project is under the **MIT License**.  
+You are free to use, share, or modify it.  
+See the [LICENSE](LICENSE) file for more info.
